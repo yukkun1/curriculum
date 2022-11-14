@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans JP',"Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+    position: fixed;
+    box-shadow: 3px 3px #333;
+}
+ul {
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+nav li a /*header aでも可能*/ {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+header a::after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 5px;
+    left: 0%;
+    bottom: -8px;
+    transition: .3s all;
+    background-color: blue;
+}
+header a:hover::after {
+    width: 100%;
+}
+
+
+.img_top {
+    margin-top: 90px;
+}
+.three {
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+.threes {
+    text-align: center;
+    justify-content: center;
+    color: aqua;
+}
+.features {
+    display: flex;
+    justify-content: center;
+}
+.feature {
+    margin-left: 40px;
+    text-align: center;
+    justify-content: center;
+}
+.figure {
+    display: block;
+}
+.medical {
+    display: flex;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+}
+.information {
+    margin: 100px 20px 20px 20px;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.clinic {
+    display: block;
+    margin: 0 20px;
+}
+.flexs {
+    display: block;
+}
+.flex {
+    display: flex;
+}
+.flex:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* ボタン */
+.button a {
+    background: #eee;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 260px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button003 a:hover {
+    background: #313131;
+    color: #FFF;
+}
+.button003 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #313131;
+    border-right: 3px solid #313131;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button003 a:hover:after {
+    border-color: #FFF;
+}
+
+.map {
+    text-align: center;
+}
+.acseess {
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.design {
+    width: 90%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 50px;
+    margin-left: 50px;
+   }
+   .design th {
+    padding: 10px;
+    background: #e9faf9;
+    border: solid 1px #778ca3;
+   }
+   .design td {
+    padding: 10px;
+    background-color: white;
+    border: solid 1px #778ca3;
+   }
+
+.footer {
+    color: #808080;
+    background: #e5e5e5;
+    text-align: center;
+    padding: 30px;
+    margin-top: 100px;
+   }
+   .footer a {
+    color: #808080;
+    text-decoration: none;
+   }
+   .footer a:hover {
+    text-decoration: underline;
+   }
+   .footer .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   .footer02 .menu li {
+    margin: 0;
+    padding: 0 20px;
+   }
+   .footer02 .copyright {
+    margin: 0;
+    padding: 20px 0 0 0;
+   }
+
+   /*★@media screenスマホ版未搭載★*/
